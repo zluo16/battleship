@@ -22,7 +22,36 @@
   font-size: large;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+/* ##### Battleship ##### */
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, [col-start] 1fr);
+  grid-gap: 20px;
+  height: 100%;
+}
+
+.grid-wrapper {
+  grid-column: col-start 2 / span 5;
+  grid-row: 6 / 10;
+  border: 1px solid black;
+  height: 462px;
+  width: 462px;
+}
+
+.opponent-grid-wrapper {
+  grid-column: col-start 8 / span 5;
+  grid-row: 6 / 10;
+  border: 1px solid black;
+  height: 462px;
+  width: 462px;
+}
+
+.box {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  padding: 0;
+  margin: 0;
+  float: left;
 }

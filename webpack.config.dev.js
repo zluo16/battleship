@@ -3,7 +3,7 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  devtool: 'inline-source-map',
+  devtool: 'cheap-module-eval-source-map',
 
   entry: {
     app: [
@@ -74,7 +74,8 @@ module.exports = {
       }
     }),
     new HtmlWebpackPlugin({
-      template: 'public/index.html'
+      template: 'public/index.html',
+      favicon: 'public/battleship.ico'
     })
   ]
 };

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import GridBox from './gridBox'
+import OpponentGridBox from './opponentGridBox'
 
 export default class GameContainer extends Component {
   constructor(props) {
@@ -14,7 +15,7 @@ export default class GameContainer extends Component {
     return (
       <div className='wrapper'>
         <GridBox wrapper={gw} />
-        <GridBox wrapper={ogw} />
+        <OpponentGridBox wrapper={ogw} />
       </div>
     )
   }

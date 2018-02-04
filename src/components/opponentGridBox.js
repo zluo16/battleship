@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-import Carrier from './ships/carrier'
 
-export default class GridBox extends Component {
+export default class OpponentGridBox extends Component {
   constructor(props) {
     super(props)
     this.state = {}
